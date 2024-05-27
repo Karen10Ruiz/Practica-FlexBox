@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+header {
+background-color: #5b70a9;
+border-radius: 12px;
+padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -22,8 +34,10 @@ h1 {
 
 .Card-Container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 24px;
   gap: 24px;
 }
@@ -36,13 +50,21 @@ h1 {
   align-items: center;
   flex-basis: 30%;
   background-color: #A7BAF2;
+  box-shadow: 10px 10px 10px #5b70a9;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.Card:hover {
+  background-color: aquamarine;
+  transform: translateY(-10px) scale(110%);
 }
 
 .Pokemon-Image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  
+  background-color: #8DAEF2;
 }
 
 .Pokemon-Info {
